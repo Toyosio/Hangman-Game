@@ -1,0 +1,47 @@
+h1 {
+	font-family: 'Pirata One', cursive;
+	text-align: center;
+	font-size: 60px;
+	color: #4169E1;
+}
+
+p {
+	font-family: 'Pirata One', cursive;
+	text-align: center;
+	font-size: 30px;
+	color: #48D1CC;
+}
+
+.header {
+	background-image: url('file:///C:/Users/lolad/Desktop/GitHub/Hangman-Game/assets/images/wrapperbcg.jpg'); 
+	width: 100%;
+	height: 200px;
+}
+
+.colA {
+	float: right ;
+	width: 50%;
+	height: 437px;
+	color: #FF7F50;
+	font-family: 'Pirata One', cursive;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('file:///C:/Users/lolad/Desktop/GitHub/Hangman-Game/assets/images/colaimage.jpg');
+}
+
+.colB {
+	float: left;
+	width:50%;
+	height: 437px;
+	color: #FF7F50;
+	font-family: 'Pirata One', cursive;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('file:///C:/Users/lolad/Desktop/GitHub/Hangman-Game/assets/images/colbimage.jpg');
+}
+
+div {
+	border-style: solid;
+	border-color: #FF7F50;
+}
+
