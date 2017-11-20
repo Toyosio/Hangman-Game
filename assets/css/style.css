@@ -16,13 +16,13 @@ p {
 	background-image: url('https://dncache-mauganscorp.netdna-ssl.com/thumbseg/42/42869-bigthumbnail.jpg');
 	background-size: cover;
 	width: 100%;
-	height: 274px;
+	height: 205px;
 }
 
 .colA {
 	float: right ;
 	width: 50%;
-	height: 400px;
+	height: 469px;
 	color: #CCCC99;
 	font-family: 'Pirata One', cursive;
 	background-repeat: no-repeat;
@@ -33,7 +33,7 @@ p {
 .colB {
 	float: left;
 	width:50%;
-	height: 400px;
+	height: 469px;
 	color: #CCCC99;
 	font-family: 'Pirata One', cursive;
 	background-repeat: no-repeat;
