@@ -17,6 +17,7 @@ p {
 	background-size: cover;
 	width: 100%;
 	height: 205px;
+	border-width: thin;
 }
 
 .colA {
@@ -28,6 +29,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url('https://previews.123rf.com/images/andreykuzmin/andreykuzmin1510/andreykuzmin151000062/47321676-aged-compass-and-steering-wheel-over-nautical-map-Stock-Photo-pirate.jpg');
+	border-width: thin;
 }
 
 .colB {
@@ -39,9 +41,47 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url('https://images5.alphacoders.com/284/284187.jpg');
+	border-width: thin;
 }
 
 div {
 	border-style: solid;
 	border-color: #CCCC99;
+}
+#social {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: black;
+}
+#copyrite {
+    text-align: center;
+    color: #793b24;;
+		font-size: 13px;
+}
+#connect {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border: none !important;
+}
+#wins {
+		border: none !important;
+		text-align: center;
+		color: #793b24;
+}
+#currentword {
+		border: none !important;
+		text-align: center;
+		color: #793b24;
+}
+#guessesleft {
+		border: none !important;
+		text-align: center;
+		color: #793b24;
+}
+#lettersguessed {
+		border: none !important;
+		text-align: center;
+		color: #793b24;
 }
