@@ -12,12 +12,16 @@ p {
 	color: #CC9966;
 }
 
-.header {
+.jumbotron {
 	background-image: url('https://dncache-mauganscorp.netdna-ssl.com/thumbseg/42/42869-bigthumbnail.jpg');
 	background-size: cover;
 	width: 100%;
-	height: 205px;
 	border-width: thin;
+	margin: 0 auto;
+	height: 205px;
+}
+.container {
+	border: none !important;
 }
 
 .colA {
@@ -52,7 +56,7 @@ div {
     width: 40px;
     height: 40px;
     margin: 5px;
-    border: black;
+    border: #CCCC99;
 }
 #copyrite {
     text-align: center;
@@ -70,18 +74,23 @@ div {
 		text-align: center;
 		color: #793b24;
 }
-#currentword {
+#currentWord {
+		border: none !important;
+		text-align: center;
+		color: #CCCC99;
+}
+#remainingGuesses {
 		border: none !important;
 		text-align: center;
 		color: #793b24;
 }
-#guessesleft {
+#UsersGuesses {
 		border: none !important;
 		text-align: center;
 		color: #793b24;
 }
-#lettersguessed {
+#hint {
 		border: none !important;
 		text-align: center;
-		color: #793b24;
+		color: #CCCC99;
 }

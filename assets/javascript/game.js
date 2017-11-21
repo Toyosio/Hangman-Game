@@ -1,17 +1,30 @@
-
-
-var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
+var gameOn = ['Long John Silver' , 'Blackbeard' , 'Jack Sparrow' , 'Captain Hook' , 'Calico Jack' , 'Captian Kidd' , 'Captain Morgan' , 'Madame Cheng' ];
 var wins; //words user guessed correctly
-var spaces; // spaces in words
-var guessesleft = 12; //guesses user has left
-var lettersguessed; // stores letters user guessed
+var spaces= ""; // spaces in words
+var totalGuesses=0;
+var guessesLeft = 0; //guesses user has left
+var lettersGuessed=null; // stores letters user guessed
+var correctLetter;//letter guessed correctly
 var counter; //keeps track of correct GUESSES
-var nextword; //next word user needs to guess after user wins/loses game
-var hint; //hint
+var wordToGuess; //word to guess
+var lettersInWord; //letters in each word
+var clue; //sentence that describes each words
 
-//create alphabet button
+//set elements
+var showGuessesLeft = document.getElementById('#remainingGuesses');
+var showClue = document.getElementById('#hint')
+var showSpaces = document.getElementById('#space')
 
-var buttons = function () {
-  button = document.getElementById('id')
+//begin game
+window.onload = function startGame () {
+//load each word
+//function startGame()
+
+   //return gameOn[Math.floor(Math.random() * gameOn.length)];
+   //}
+//function showSpaces() {
+   //var spaces="";
+   //for (var i = 0; i < gameOn.length; i++) {
+      //gameOn += '__';
+//   }
 }
