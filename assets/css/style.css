@@ -74,6 +74,11 @@ div {
 		text-align: center;
 		color: #793b24;
 }
+#loss {
+		border: none !important;
+		text-align: center;
+		color: #793b24;
+}
 #currentWord {
 		border: none !important;
 		text-align: center;
