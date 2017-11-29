@@ -9,14 +9,15 @@ var incorrectGuess = []; //letter guessed incorrectly
 var counter; //keeps track of correct guesses
 var wordToGuess = ""; //word to guess
 var lettersInWord = []; //letters in each word
-var clue; //sentence that describes each words
+var clue = ['long john silver clue', 'blackbeard clue', 'jack sparrow clue', 'captain hook clue', 'calico jack clue', 'captain kidd clue', 'captain morgan clue', 'madame cheng clue']; //sentence that describes each words
 
 //set elements to innerHTML
-document.getElementById('currentWord').innerHTML = spaces;
-document.getElementById('remainingGuesses').innerHTML = guessesLeft;
-document.getElementById('wins').innerHTML = wins;
-document.getElementById('loss').innerHTML = loss;
-document.getElementById('UsersGuesses').innerHTML = incorrectGuess;
+document.getElementById('currentWord').innerHTML=("CURRENT WORD" + ": " + spaces);
+document.getElementById('remainingGuesses').innerHTML=("GUESSES LEFT" + ": " + guessesLeft);
+document.getElementById('wins').innerHTML=("WINS" +": " + wins);
+document.getElementById('loss').innerHTML=("LOSSES" +": " + loss);
+document.getElementById('UsersGuesses').innerHTML= ("LETTERS GUESSED" + ": " + incorrectGuess);
+document.getElementById('hint').innerHTML=("HINT" + ": " + clue);
 
 //test
 console.log(gameOn);
