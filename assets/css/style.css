@@ -84,7 +84,7 @@ div {
 #currentWord {
 		border: none !important;
 		text-align: center;
-		color: #793b24;
+		color: #CCCC99;
 		font-size: 40px;
 }
 #remainingGuesses {

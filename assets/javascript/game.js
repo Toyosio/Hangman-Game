@@ -1,4 +1,4 @@
-var gameOn = ['long john silver', 'blackbeard', 'jack sparrow', 'captain hook', 'calico jack', 'captian kidd', 'captain morgan', 'madame ching'];
+var gameOn = ['long john silver', 'blackbeard', 'jack sparrow', 'captain hook', 'calico jack', 'captain kidd', 'captain morgan', 'madame ching'];
 var wordToGuess = ""; //word to guess
 var lettersInWord = []; //letters in each word
 var correctGuess = []; //letter guessed correctly
@@ -34,13 +34,19 @@ var clueToGuess = ""; //clue associated with wordToGuess
     document.getElementById('currentWord').innerHTML = ("CURRENT WORD: " + correctGuess);
     document.getElementById('UsersGuesses').innerHTML = ("LETTERS GUESSED: " + incorrectGuess);
   }
+
 //gives user a hint for each wordToGuess
 function showHint() {
 clueToGuess = clue[Math.floor(Math.random() * clue.length)];
-document.getElementById("hint").innerHTML = ("HINT: " + clueToGuess.length);
-for (var z = 0; z < clue; z++) {
+for (var i = 0;i < clue; i++) {
+  if (correctGuess === lettersInWord) {
+    clueToGuess++;
+  }
   clueToGuess.push(" ");
 }
+
+
+document.getElementById("hint").innerHTML = ("HINT: " + clueToGuess);
 };
 console.log(clueToGuess);
   //if player guesses correct letter, show letters in spaces and letters guessed
