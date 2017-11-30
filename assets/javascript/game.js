@@ -1,4 +1,4 @@
-var gameOn = ['long john silver', 'blackbeard', 'jack sparrow', 'captain hook', 'calico jack', 'captian kidd', 'captain morgan', 'madame cheng'];
+var gameOn = ['long john silver', 'blackbeard', 'jack sparrow', 'captain hook', 'calico jack', 'captian kidd', 'captain morgan', 'madame ching'];
 var wordToGuess = ""; //word to guess
 var lettersInWord = []; //letters in each word
 var correctGuess = []; //letter guessed correctly
@@ -7,7 +7,9 @@ var wins = 0;
 var loss = 0;
 var spaces = 0; //spaces in words
 var guessesLeft = 12; //guesses user has left
-//var clue = ['long john silver clue', 'blackbeard clue', 'jack sparrow clue', 'captain hook clue', 'calico jack clue', 'captain kidd clue', 'captain morgan clue', 'madame cheng clue']; //sentence that describes each words
+//var clue = ['long john silver clue', 'blackbeard clue', 'jack sparrow clue', 'captain hook clue', 'calico jack clue', 'captain kidd clue', 'captain morgan clue', 'madame cheng clue'];
+var clue = ['Pegleg pirate with a parrot', 'Known for long dark beard', 'Fictional character in The Pirates of the Caribbean', 'Fictional character in Peter Pan', 'Known for his brightly colored clothing and creating the flag that became most recognized flags for all pirates', 'Privateer turned pirate who was publicly hanged for piracy', 'RUM', 'The pirate Queen of China']; //sentence that describes each words
+var clueToGuess = ""; //clue associated with wordToGuess
 
 //resets game
   //Pick a words
@@ -32,7 +34,15 @@ var guessesLeft = 12; //guesses user has left
     document.getElementById('currentWord').innerHTML = ("CURRENT WORD: " + correctGuess);
     document.getElementById('UsersGuesses').innerHTML = ("LETTERS GUESSED: " + incorrectGuess);
   }
-
+//gives user a hint for each wordToGuess
+function showHint() {
+clueToGuess = clue[Math.floor(Math.random() * clue.length)];
+document.getElementById("hint").innerHTML = ("HINT: " + clueToGuess.length);
+for (var z = 0; z < clue; z++) {
+  clueToGuess.push(" ");
+}
+};
+console.log(clueToGuess);
   //if player guesses correct letter, show letters in spaces and letters guessed
   function playerGuesses(letter) {
     var lettersInWord = false;
@@ -48,7 +58,6 @@ var guessesLeft = 12; //guesses user has left
           correctGuess[t] = letter;
         }
       }
-      console.log(correctGuess);
     }
 
     else {
@@ -77,9 +86,10 @@ var guessesLeft = 12; //guesses user has left
     }
   }
 
-  PickWord();
+PickWord();
+showHint();
 
-  document.onkeyup = function (event) {
+  document.onkeydown = function (event) {
     var chosenLetter = String.fromCharCode(event.keyCode).toLowerCase();
     playerGuesses(chosenLetter);
     calculate();
