@@ -73,29 +73,35 @@ div {
 		border: none !important;
 		text-align: center;
 		color: #793b24;
+		font-size: 40px;
 }
 #loss {
 		border: none !important;
 		text-align: center;
 		color: #793b24;
+		font-size: 40px;
 }
 #currentWord {
 		border: none !important;
 		text-align: center;
 		color: #CCCC99;
+		font-size: 40px;
 }
 #remainingGuesses {
 		border: none !important;
 		text-align: center;
 		color: #793b24;
+		font-size: 40px;
 }
 #UsersGuesses {
 		border: none !important;
 		text-align: center;
 		color: #793b24;
+		font-size: 40px;
 }
 #hint {
 		border: none !important;
 		text-align: center;
 		color: #CCCC99;
+		font-size: 40px;
 }
