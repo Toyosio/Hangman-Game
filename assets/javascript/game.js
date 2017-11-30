@@ -39,8 +39,8 @@ var clueToGuess = ""; //clue associated with wordToGuess
 function showHint() {
 clueToGuess = clue[Math.floor(Math.random() * clue.length)];
 for (var i = 0;i < clue; i++) {
-  if (correctGuess === lettersInWord) {
-    clueToGuess++;
+  if (correctGuess === wordToGuess) {
+    clue++;
   }
   clueToGuess.push(" ");
 }
@@ -82,6 +82,7 @@ console.log(clueToGuess);
       document.getElementById('wins').innerHTML = ("WINS: " + wins);
       alert('YO HO HO!!!');
       PickWord();
+      showHint();
     }
     //if player runs out of guesses before winning add one losses play dangerous pirate music
     else if (guessesLeft === 0) {
@@ -89,6 +90,7 @@ console.log(clueToGuess);
       document.getElementById('loss').innerHTML = ("LOSSES: " + loss);
       alert('ARGHHH Hang im from the yard arm');
       PickWord();
+      showHint();
     }
   }
 
